@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+}
+.navbar{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding: 10px;
+    justify-content: end;
+}
+.nav-item{
+    color: blue;
+    background-color: white;
+}
+.nav-item{
+    display: flex;
+}
+.footbar{
+    background-color: aliceblue;
+    display: flex;
+}
