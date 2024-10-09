@@ -1,25 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div></div>
-        <div class="nac-item-container"></div>
-            <div class="nac-item">Menu</div>
-            <div class="nac-item">Download</div>
-            <div class="nac-item">Home</div>
-    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Foods</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-<footer class="footbar">
-    <div>contact</div>
-    <div class="nac-item-container"></div>
-        <button class="nav-item">Line</div>
-        <button class="nav-item">Facebook</button>
-</footer>
+
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <p>Hello! I'm Chanyut Benjaphlakorn, and this is my website!</p>
+    </header>
+
+    <div class="container">
+        <section id="about" class="grid-item">
+            <h2>About Me</h2>
+            <p>This is my first website that I have</p>
+            <img src="cat.jpg" alt="My Profile Picture" class="profile-img">
+        </section>
+
+        <section id="projects" class="grid-item">
+            <h2>Food for you</h2>
+            <div class="food">
+                <h3>Pad kra pao</h3>
+                <p>Delicious...</p>
+                <button>Take This!</button>
+            </div>
+            <div class="food">
+                <h3>Takoyaki</h3>
+                <p>Another delicious!...</p>
+                <button>Take This!</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Follow me on:</p>
+        <a href="https://www.facebook.com/chanyut.benjaphalakorn/" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/ml_yut/" target="_blank">Instagram</a> |
+    </footer>
+
 </body>
 </html>
