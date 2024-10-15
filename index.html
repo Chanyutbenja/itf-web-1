@@ -1,53 +1,48 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Melody's Phone Book</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Foods</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-        <p>Hello! I'm Chanyut Benjaphlakorn, and this is my website!</p>
-    </header>
-
-    <div class="container">
-        <section id="about" class="grid-item">
-            <h2>About Me</h2>
-            <p>This is my first website that I have</p>
-            <img src="cat.jpg" alt="My Profile Picture" class="profile-img">
-        </section>
-
-        <section id="projects" class="grid-item">
-            <h2>Food for you</h2>
-            <div class="food">
-                <h3>Pad kra pao</h3>
-                <p>Delicious...</p>
-                <button>Take This!</button>
-            </div>
-            <div class="food">
-                <h3>Takoyaki</h3>
-                <p>Another delicious!...</p>
-                <button>Take This!</button>
-            </div>
-        </section>
+    <div class="phone-book-container">
+        <h1>My Melody's Phone Book</h1>
+        <div class="avatar-container">
+            <div class="avatar" style="background-image: url('pro.jpg');"></div>
+            <div class="notification">1</div>
+        </div>
+        <div class="username">
+            <a href="https://www.instagram.com/ml_yut/" id="username-link">ชาญยุทธ เบญจพลากร 67070037</a>
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Enter Username" id="username-input">
+            <button onclick="updateUsername()">Set</button>
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Enter Image URL" id="image-url-input">
+            <button onclick="updateImage()">Set</button>
+        </div>
+        <h2>Phone Number List</h2>
+        <div class="input-group">
+            <input type="text" placeholder="Name" id="name-input">
+            <input type="tel" placeholder="Phone Number" id="phone-input">
+            <button onclick="addEntry()">Add</button>
+            <button onclick="exportToCSV()">Export</button>
+        </div>
+        <table id="phone-book">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
-
-    <footer>
-        <p>Follow me on:</p>
-        <a href="https://www.facebook.com/chanyut.benjaphalakorn/" target="_blank">Facebook</a> |
-        <a href="https://www.instagram.com/ml_yut/" target="_blank">Instagram</a> |
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
